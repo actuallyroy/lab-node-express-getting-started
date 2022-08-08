@@ -21,14 +21,14 @@ app.post('/', (req, res) => {
     res.send(true)
 })
 
-app.listen(8001, () => {
+app.listen(process.env.PORT || 8001, () => {
     console.log("Server is running on port " + 8001)
 })
 
 
 
 
-http.createServer(function (req, res) {
-  res.write('This is node http server'); 
-  res.end(); 
-}).listen(8080);
+// http.createServer(function (req, res) {
+//   res.write('This is node http server'); 
+//   res.end(); 
+// }).listen(8080);
